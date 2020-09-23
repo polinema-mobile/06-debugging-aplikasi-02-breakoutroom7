@@ -71,4 +71,43 @@ public class TesKlikButton {
         onView(withId(R.id.button0)).perform(click());
         onView(withId(R.id.input)).check(matches(withText("0")));
     }
+
+    @Test
+    public void tesTambahButtonSatu(){
+        //cari id button1 terus di klik
+        onView(withId(R.id.button1)).perform(click());
+        onView(withId(R.id.button_add)).perform(click());
+        onView(withId(R.id.button1)).perform(click());
+        onView(withId(R.id.button_equal)).perform(click());
+        onView(withId(R.id.output)).check(matches(withText("2")));
+    }
+
+    @Test
+    public void tesKaliButtonSatu(){
+        //cari id button1 terus di klik
+        onView(withId(R.id.button2)).perform(click());
+        onView(withId(R.id.button_multi)).perform(click());
+        onView(withId(R.id.button1)).perform(click());
+        onView(withId(R.id.button_equal)).perform(click());
+        onView(withId(R.id.output)).check(matches(withText("2")));
+    }
+
+    @Test
+    public void tesBagiButtonSatu(){
+        //cari id button1 terus di klik
+        onView(withId(R.id.button4)).perform(click());
+        onView(withId(R.id.button_divide)).perform(click());
+        onView(withId(R.id.button2)).perform(click());
+        onView(withId(R.id.button_equal)).perform(click());
+        onView(withId(R.id.output)).check(matches(withText("2")));
+    }
+
+    @Test
+    public void tesKurangButtonSatu(){
+        //cari id button1 terus di klik
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_sub)).perform(click());
+        onView(withId(R.id.button2)).perform(click());
+        onView(withId(R.id.input)).check(matches(withText("3")));
+    }
 }

@@ -62,12 +62,12 @@ public class TesKlikButton {
         onView(withId(R.id.input)).check(matches(withText("8")));
     }
     public void tesKlikButtonSembilan(){
-        //cari id button2 terus di klik
+        //cari id button9 terus di klik
         onView(withId(R.id.button9)).perform(click());
         onView(withId(R.id.input)).check(matches(withText("9")));
     }
     public void tesKlikButtonNol(){
-        //cari id button2 terus di klik
+        //cari id button0 terus di klik
         onView(withId(R.id.button0)).perform(click());
         onView(withId(R.id.input)).check(matches(withText("0")));
     }

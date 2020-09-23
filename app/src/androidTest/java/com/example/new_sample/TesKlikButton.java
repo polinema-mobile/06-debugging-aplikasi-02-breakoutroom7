@@ -26,5 +26,49 @@ public class TesKlikButton {
         onView(withId(R.id.button1)).perform(click());
         onView(withId(R.id.input)).check(matches(withText("1")));
     }
-
+    public void tesKlikButtonDua(){
+        //cari id button2 terus di klik
+        onView(withId(R.id.button2)).perform(click());
+        onView(withId(R.id.input)).check(matches(withText("2")));
+    }
+    public void tesKlikButtonTiga(){
+        //cari id button2 terus di klik
+        onView(withId(R.id.button3)).perform(click());
+        onView(withId(R.id.input)).check(matches(withText("3")));
+    }
+    public void tesKlikButtonEmpat(){
+        //cari id button2 terus di klik
+        onView(withId(R.id.button4)).perform(click());
+        onView(withId(R.id.input)).check(matches(withText("4")));
+    }
+    public void tesKlikButtonLima(){
+        //cari id button2 terus di klik
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.input)).check(matches(withText("5")));
+    }
+    public void tesKlikButtonEnam(){
+        //cari id button2 terus di klik
+        onView(withId(R.id.button6)).perform(click());
+        onView(withId(R.id.input)).check(matches(withText("6")));
+    }
+    public void tesKlikButtonTujuh(){
+        //cari id button2 terus di klik
+        onView(withId(R.id.button7)).perform(click());
+        onView(withId(R.id.input)).check(matches(withText("7")));
+    }
+    public void tesKlikButtonDelapan(){
+        //cari id button2 terus di klik
+        onView(withId(R.id.button8)).perform(click());
+        onView(withId(R.id.input)).check(matches(withText("8")));
+    }
+    public void tesKlikButtonSembilan(){
+        //cari id button2 terus di klik
+        onView(withId(R.id.button9)).perform(click());
+        onView(withId(R.id.input)).check(matches(withText("9")));
+    }
+    public void tesKlikButtonNol(){
+        //cari id button2 terus di klik
+        onView(withId(R.id.button0)).perform(click());
+        onView(withId(R.id.input)).check(matches(withText("0")));
+    }
 }
